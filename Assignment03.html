@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment03</title>
+</head>
+<body>
+<script>
+    const arrNumber = [5, 7, 10, 6, 2, 8, 1, 3];
+
+    function displayEvenNumberOfArray(arr) {
+        let result = "";
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                result += arr[i] + " ";
+                count++;
+            }
+        }
+        console.log("Cac phan tu chan trong mang : " + result);
+        console.log(`Co : ${count} so chan trong mang`);
+
+    }
+
+    displayEvenNumberOfArray(arrNumber);
+</script>
+</body>
+</html>

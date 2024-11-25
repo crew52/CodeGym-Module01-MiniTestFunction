@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 01</title>
+</head>
+<body>
+<script>
+    function deleteArray(arr, product) {
+        return arr.splice(arr.indexOf(product), 1);
+    }
+
+    const arrayProduct = ['hoang', 'dung', 'son', 'viet'];
+    deleteArray(arrayProduct, 'son');
+    console.log(arrayProduct);
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 04</title>
+</head>
+<body>
+<script>
+    const arrNumber = [5, 7, 10, 6, 2, 8, 1, 3, 3, 1, 2, 5, 5];
+
+    function countNumberOfArray(arr, product) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === product) {
+                count++;
+            }
+        }
+        checkNumber(count);
+    }
+
+    function checkNumber(number) {
+        if (number <= 0) {
+            console.log("Khong tim thay phan tu trung khop");
+        } else {
+            console.log(`Tim thay ${number} phan tu trung khop`);
+        }
+    }
+
+    countNumberOfArray(arrNumber, 11);
+</script>
+</body>
+</html>

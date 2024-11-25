@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment02</title>
+</head>
+<body>
+<script>
+    function avgScore(mathScore, englishScore, literatureScore) {
+        checkScore(mathScore);
+        checkScore(englishScore);
+        checkScore(literatureScore);
+        let avg = (mathScore + englishScore + literatureScore) / 3;
+        let result = "";
+        if (avg < 5) {
+            result = `avg = ${avg} : Khong dat`;
+        } else if (avg < 8) {
+            result = `avg = ${avg} : Dat`;
+        } else {
+            result = `avg = ${avg} : Tot`;
+        }
+        return result;
+    }
+
+    function checkScore(score) {
+        while (score < 0 || score > 10) {
+            score = +prompt("Enter Score: ")
+        }
+        return score;
+    }
+
+    console.log(avgScore(9, 2, 10));
+
+</script>
+</body>
+</html>
