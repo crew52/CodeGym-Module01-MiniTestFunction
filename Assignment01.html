@@ -7,12 +7,19 @@
 <body>
 <script>
     function deleteArray(arr, product) {
-        return arr.splice(arr.indexOf(product), 1);
+        for (let i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] === product) {
+                arr.splice(i, 1);
+            }
+        }
+        return arr;
     }
 
-    const arrayProduct = ['hoang', 'dung', 'son', 'viet'];
+    const arrayProduct = ['hoang', 'dung', 'son', 'son', 'son', 'viet', 'son', 'dung'];
+    console.log(arrayProduct);
     deleteArray(arrayProduct, 'son');
     console.log(arrayProduct);
+
 </script>
 </body>
-</html>
+</html>s
